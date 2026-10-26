@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: task-manager-api
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: DB_SCHEMA
+        value: taskapi
+      - key: JWT_SECRET
+        generateValue: true
