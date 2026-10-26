@@ -3,7 +3,7 @@
 REST API for personal task management: JWT authentication, user/admin roles, CRUD,
 filtering, search, sorting, pagination, interactive OpenAPI docs, Jest tests and Docker.
 
-**Try it:** https://task-manager-api.onrender.com/docs — register, press **Authorize**, paste the token,
+**Try it:** https://task-manager-api-3t5y.onrender.com/docs — register, press **Authorize**, paste the token,
 then call the task endpoints. (Free hosting: the first request after a pause takes up to a minute.)
 
 ## Stack
